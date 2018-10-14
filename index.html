@@ -8,12 +8,26 @@
 
     <p onClick='makeGreen()'>xBreakxDownx</p>
 
-    <script src="script.js">
+    <script>
     const dogs = [{ name: 'Snickers', age: 2}, { name: ' hugo', age: 8}]
 
     function makeGreen() {
-      
+      const p = document.querySelector('p');
+      p.style.color = '#BADASS';
+      p.style.fontSize = '50px';
     }
+
+    // Regular
+    console.log('hello');
+
+    // Interpolated
+    console.log('Hello I am a %s string!', 'bunny');
+    console.log(`Hello I am ${variable}`);
+
+    // Styled
+    console.log('%c I am some great text', 'font-size: 50px, background:red; text-shadow: 10px 0 blue')
+
+
     </script>
   </body>
 </html>
