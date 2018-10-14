@@ -41,6 +41,28 @@
     console.assert(p.classList.contains('ouch'), 'That is wrong!');
 
     // clearing
+    console.clear();
+
+    // viewing DOM elements
+    console.log(p);
+    console.dir(p);
+
+
+    // Grouping together
+    dogs.forEach(dog => {
+      console.groupCollapsed(`${dog.name}`);
+      console.log(`This is ${dog.name}`);
+      console.log(`${dog.name} is ${dog.age * 7} years old`);
+      console.log(`${dog.name} is ${dog.age * 7} dog years old`);
+
+      console.groupEnd(`${dog.name}`);
+    })
+
+
+    // counting
+
+    console.count();
+
 
 
     </script>
